@@ -1,7 +1,7 @@
 # ionic-file-upload
 Ionic File upload
 
-#Dependencies
+Dependencies
 
 $ ionic cordova plugin add cordova-plugin-camera
 $ npm install --save @ionic-native/camera
@@ -15,5 +15,6 @@ $ npm install --save @ionic-native/file-transfer
 $ ionic cordova plugin add cordova-plugin-advanced-http
 $ npm install --save @ionic-native/http
 
-#Run
+Run
+
 $ ionic cordova run android --device --debug
