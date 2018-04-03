@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h4 *ngIf="files.length > 0">Images Preview</h4>
+
+  <ion-list *ngIf="files.length > 0">
+    <ion-item *ngFor="let file of files">
+      <img src="{{server_url}}/uploads/{{file.name}}" alt="Image-{{file.id}}" width="300" />
+      <button danger ion-button block icon-only (click)="remove(file)">
+        <ion-icon name="trash"></ion-icon>
+      </button>
+    </ion-item>
+  </ion-list>
+
+  <button ion-button block (click)="upload()"> <ion-icon ios="ios-add-circle" md="md-add-circle"></ion-icon>Take or Select File</button>
+
+</ion-content>
